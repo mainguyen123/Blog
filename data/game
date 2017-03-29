@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+<head>
+  <title>Blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="../css/background.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/interactive.js"></script>
+  <style>
+  canvas {
+    width: auto;
+/*    border:1px solid #d3d3d3;*/
+    position: absolute;
+    background-color: #00FF00;
+    float: right;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.3;
+  }
+  </style>
+</head>
+<body>
+  <div id="mainbackground"></div>
+  <div id="mainTopbar"></div>
+  <div id="mainHeader" style="position: relative;"></div>
+
+<!-- Content -->
+<div class="w3-content w3-display-container" style="max-width:1400px;position: relative;">
+
+
+<!-- Grid -->
+  <div class="w3-row" style="position: relative;">
+<img id="03" src="../img/game/desert-level.jpg" style="width:70%; height:600px">
+
+<script>
+
+function startGame() {
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+      var img = document.getElementbyId("03");
+        // this.canvas.width = 480;
+        // this.canvas.height = 270;
+        var ctx = this.canvas.getContext("2d");
+        ctx.drawImage(img,100,100,500,500);
+        //this.context.drawImage();
+        // document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+
+</script>
+<br>
+<canvas id="canvas" onload="startGame()"></canvas>
+<button style="margin-top: 300px;margin-left: 200;" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<!-- <p>Use the ACCELERATE button to stay in the air</p>
+<p>How long can you stay alive?</p> -->
+<!-- <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button> -->
+  </div>
+</div>
+
+<!-- Footer -->
+  <!-- <div id="mainFooterBtn"></div>  -->
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+MemSQL doesn't follow the typical NoSQL rules, but that hasn't stopped it from gaining in popularity. Founder Eric Frenkiel recently spoke with TechRepublic about the company's latest moves.
+With Google, Facebook, and other big web companies handing out the world's best data infrastructure for free, it has become a truism that all essential data infrastructure is now open source.
+Except when it's not.
+I spent several years at MongoDB, a leading open source NoSQL database. MongoDB's success has attracted scores of venture-backed market entrants, one of which is MemSQL. Where most of these new NoSQL entrants followed the traditional open source development and business model route, MemSQL moved in a totally different direction. MemSQL's software is (gasp!) not open source and (gasp again!) they embraced SQL. Even so, it keeps managing to grow in popularity, as measured by DB-Engines.

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+<head>
+<title>Blog-mainbackground</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="stylesheet" href="../css/background.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- Background image -->
+<img class="w3-image bg-image" src="../img/blue-sky.jpg" alt="BackGround" style="width: 100%">
+
+<!-- Top Bar -->
+<div class="w3-top">
+  	<div class="w3-bar w3-dark-grey w3-card-2">
+	    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+	    
+    	<div class="w3-dropdown-hover w3-hide-small">
+      		<button class="w3-padding-large w3-button" title="More">BLOG <i class="fa fa-caret-down"></i></button>     
+      		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	        <a href="#business" class="w3-bar-item w3-button">Business</a>
+	        <a href="#technology" class="w3-bar-item w3-button">Technology</a>
+	        <a href="#" class="w3-bar-item w3-button">Biology</a>
+      		</div>
+    	</div>
+
+	    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+	    <a href="contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    	<div class="w3-dropdown-hover w3-hide-small">
+      		<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	        <a href="forum" class="w3-bar-item w3-button">Forum</a>
+	        <a href="game" class="w3-bar-item w3-button">Game</a>
+	        <a href="#" class="w3-bar-item w3-button">Apps</a>
+      		</div>
+    	</div>
+    	<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  	</div>
+</div>
+
+<!-- Top Bar on small screens - what for??/-->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="#band" class="w3-bar-item w3-button w3-padding-large">BLOG</a>
+		<a href="#tour" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+		<a href="#more" class="w3-bar-item w3-button w3-padding-large">MORE</a>
+</div>
+<!-- END OF Top Bar -->
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  	<h1><b>CARROT BLOG</b></h1>
+  	<p><b>Welcome to the blog of <span class="w3-tag">CARROTTER</span></b></p>
+</header>
+
+<!-- Footer -->
+<div class="w3-row">
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-xlarge">
+ 	<button class="w3-button w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+ 	<button class="w3-button w3-padding-large w3-margin-bottom">Next »</button>
+ 	<div class="w3-right w3-margin-right">
+ 	<i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+ 	<i class="fa fa-instagram w3-hover-text-purple"></i>
+ 	<i class="fa fa-snapchat w3-hover-text-yellow"></i>
+ 	<i class="fa fa-pinterest-p w3-hover-text-red"></i>
+ 	<i class="fa fa-twitter w3-hover-text-light-blue"></i>
+ 	<i class="fa fa-linkedin w3-hover-text-indigo"></i>
+ </div>
+</footer>
+	</div>
+
+<!-- FORM -->
+	<!-- LOGIN FORM -->
+	<h2>Login Form</h2>
+
+	<form action="/action_page.php">
+	  <div class="imgcontainer">
+	    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+	  </div>
+
+	  <div class="w3-padding-large">
+	    <label><b>Username</b></label>
+	    <input type="text" placeholder="Enter Username" name="uname" required>
+
+	    <label><b>Password</b></label>
+	    <input type="password" placeholder="Enter Password" name="psw" required>
+	        
+	    <button type="submit">Login</button>
+	    <input type="checkbox" checked="checked"> Remember me
+	  </div>
+
+	  <div class="w3-padding-large" style="background-color:#f1f1f1">
+	    <button type="button" style="width: auto;padding: 10px 18px;background-color: #f44336;">Cancel</button>
+	    <span class="psw">Forgot <a href="#">password?</a></span>
+	  </div>
+	</form>
+
+</body>
+</html>

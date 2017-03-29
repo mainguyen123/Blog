@@ -1,0 +1,23 @@
+/*-----------------
+		Content
+-------------------*/
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.bg-image{height:100%;width:200px;position: fixed;z-index:-1;overflow:auto;}
+.loginimgcontainer{
+	text-align: center;
+	margin: 24px;
+}
+.loginimgavt{
+	width: 40%;
+	border-radius: 50%;
+}
+.logincontainer{
+	
+}
+
+/*-----------------
+		W3
+-------------------*/
+.w3-colright{position:absolute;float:left;width:33.33333%;overflow: auto;}
+.jGridContent{}
+.jGridList{}

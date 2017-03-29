@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="stylesheet" href="../css/background.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/interactive.js"></script>
+</head>
+
+<body>
+  <div id="mainbackground"></div>
+  <div id="mainTopbar"></div>
+  <div id="mainHeader"></div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1400px">
+
+	<!-- Grid -->
+	<div class="w3-row">
+	
+	<div class="w3-card-4 w3-margin w3-white">
+	<!-- Contact -->
+<!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey w3-hover-brown">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>ntmai@humaxdigital.com</p>
+      </div>
+      <div class="w3-third w3-teal w3-hover-brown">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Handico Tower, Cau Giay, Hanoi, Vietnam</p>
+      </div>
+      <div class="w3-third w3-dark-grey w3-hover-brown">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>+841557227712</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-group">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" placehoder="FullName" required>
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="email" name="Email" placeholder="JohnDoe@gmail.com" required>
+      </div>
+      <div class="w3-group">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="textarea" name="Message" placeholder="Please let your message at here" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-padding-large w3-margin-bottom" onclick="alert('Thanks for your contribution')"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>	
+
+
+
+  <!-- Add Google Maps -->
+  <div id="googleMap" style="height:400px;" class="w3-max w3-row-padding"></div>
+  <script>
+  function myMap() {
+    myCenter=new google.maps.LatLng(21.016658, 105.781897);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIYUKSD-8x3X2RC8-3p1L3HY95brdll8E&callback=myMap"></script>
+
+  <!-- Go to page https://developers.google.com/maps/documentation/javascript/get-api-key to get api for access google maps link -->
+
+  <!-- END OF Contact -->
+  </div>
+  <!-- END OF Content -->
+  </div>
+
+  <div id="mainFooterBtn"></div>
+
+</body>
+</html>
