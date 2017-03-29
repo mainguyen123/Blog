@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>www.blog.com</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="stylesheet" href="../css/background.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/interactive.js"></script>
+</head>
+
+<body>
+<img class="w3-image bg-image" src="../img/blue-sky.jpg" alt="BackGround" style="width: 100%">
+
+<!-- Top Bar -->
+<div class="w3-top">
+  	<div class="w3-bar w3-dark-grey w3-card-2">
+	    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	    <a href="data/index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+	    
+    	<div class="w3-dropdown-hover w3-hide-small">
+      		<button class="w3-padding-large w3-button" title="More">BLOG <i class="fa fa-caret-down"></i></button>     
+      		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	        <a href="#business" class="w3-bar-item w3-button">Business</a>
+	        <a href="#technology" class="w3-bar-item w3-button">Technology</a>
+	        <a href="#" class="w3-bar-item w3-button">Biology</a>
+      		</div>
+    	</div>
+
+	    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+	    <a href="data/contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    	<div class="w3-dropdown-hover w3-hide-small">
+      		<button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+	        <a href="data/forum" class="w3-bar-item w3-button">Forum</a>
+	        <a href="data/game" class="w3-bar-item w3-button">Game</a>
+	        <a href="#" class="w3-bar-item w3-button">Apps</a>
+      		</div>
+    	</div>
+    	<a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+	  	</div>
+</div>
+
+<!-- Top Bar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+		<a href="#band" class="w3-bar-item w3-button w3-padding-large">BLOG</a>
+		<a href="#tour" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+		<a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+		<a href="#more" class="w3-bar-item w3-button w3-padding-large">MORE</a>
+</div>
+<!-- END OF Top Bar -->
+
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  	<h1><b>CARROT BLOG</b></h1>
+  	<p><b>Welcome to the blog of <span class="w3-tag">CARROTTER</span></b></p>
+</header>
+
+<div class="w3-content" style="max-width:1400px">
+	
+
+	<!-- Grid -->
+	<div class="w3-row" style="width:70%;float: left;">
+	<!-- Blog entries -->
+	<div class="w3-card-4 w3-margin w3-white" style="width: 100%;">
+
+		<!-- Blog entry -->
+		<img src="../img/Uber.jpg" alt="Sky" style="width: 100%">
+		<div id="business" class="w3-container w3-padding-8">
+			<h3><b>Business</b></h3>
+			<h5>No more Uber, Grab or Go-jek for one tourist-friendly Indonesian city <span class="w3-opacity">Mar 15, 2017</span></h5>
+		</div>
+
+		<div class="w3-container w3-justify">
+			<p id="txt-load"></p>
+			<script type="text/javascript">
+			$("#txt-load").load("../info/grab.txt");
+			</script>
+        	<div class="w3-row">
+	    		<div class="w3-col m8 s12">
+	    			<p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+	    		</div>
+	    		<div class="w3-col m4 w3-hide-small">
+	    			<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+	    		</div>
+        	</div>
+        </div>
+
+		<!-- Blog entry -->
+		<img src="../img/dbengineer.jpg" alt="Sky" style="width: 100%">
+		<div class="w3-container w3-padding-8">
+			<h3><b>Technology</b></h3>
+			<h5>Why this new school database might be your next data warehouse <span class="w3-opacity">Mar 12, 2017</span></h5>
+		</div>
+
+		<div class="w3-container w3-justify">
+			<p id="txt-load1"></p>
+			<script type="text/javascript">
+			$("#txt-load1").load("../info/Technology.txt");
+			</script>
+			<!-- http://www.techrepublic.com/article/why-this-new-school-database-might-be-your-next-data-warehouse/ -->
+        	<div class="w3-row">
+        		<div class="w3-col m8 s12">
+        			<p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        		</div>
+        		<div class="w3-col m4 w3-hide-small">
+        			<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        		</div>
+        	</div>
+        </div>
+
+        <!-- Blog entry -->
+		<img src="../img/dev.jpg" alt="Sky" style="width: 100%">
+		<div id="technology" class="w3-container w3-padding-8">
+			<h3><b>Technology</b></h3>
+			<h5>How big data developers use automation tools to identify mission-critical apps <span class="w3-opacity">Mar 12, 2017</span></h5>
+		</div>
+
+		<div class="w3-container w3-justify">
+			<p id="txt-load2"></p>
+			<script type="text/javascript">
+			$("#txt-load2").load("../info/bigdata.txt");
+			</script>
+			<!-- http://www.techrepublic.com/article/why-this-new-school-database-might-be-your-next-data-warehouse/ -->
+        	<div class="w3-row">
+        		<div class="w3-col m8 s12">
+        			<p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        		</div>
+        		<div class="w3-col m4 w3-hide-small">
+        			<p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+        		</div>
+        	</div>
+
+        </div>
+
+    <!-- END OF Blog entries -->
+	</div>
+	</div>
+	<!-- Left Menu -->
+    <div class="w3-col w3-right w3-padding-left" style="width:30%;float: left;">
+    	<!-- Information card -->
+    	<div class="w3-card-2 w3-margin w3-margin-top">
+        	<img src="../img/avt.jpg" style="width:100%">
+        	<div class="w3-container w3-white">
+        	<h4><b>Anya Taylor-Joy</b></h4>
+        	<p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you</p>
+        	</div>
+        </div>
+   		<!-- Popular Post -->
+		<div class="w3-card-2 w3-margin">
+		  <div class="w3-container w3-padding">
+		    <h4>Popular Posts</h4>
+		  </div>
+		  <ul class="w3-ul w3-hoverable w3-white">
+		    <li class="w3-padding-16">
+		      <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+		      <span class="w3-large">Lorem</span><br>
+		      <span>Sed mattis nunc</span>
+		    </li>
+		    <li class="w3-padding-16">
+		      <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+		      <span class="w3-large">Ipsum</span><br>
+		      <span>Praes tinci sed</span>
+		    </li> 
+		    <li class="w3-padding-16">
+		      <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+		      <span class="w3-large">Dorum</span><br>
+		      <span>Ultricies congue</span>
+		    </li>   
+		    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+		      <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+		      <span class="w3-large">Mingsum</span><br>
+		      <span>Lorem ipsum dipsum</span>
+		    </li>  
+		  </ul>
+		</div>
+		<hr>
+
+		<!-- Labels / tags -->
+  		<div class="w3-card-2 w3-margin">
+  		  <div class="w3-container w3-padding">
+  		    <h4>Tags</h4>
+  		  </div>
+  		  <div class="w3-container w3-white">
+  		  <p><span class="w3-tag w3-black w3-margin-bottom">Blockchain</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">MachineLearning</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+  		    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Business</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Biology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">BigData</span>
+  		    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">AI</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+  		    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hottest</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+  		    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+  		  </p>
+  		  </div>
+  		</div>
+	<!-- END OF Left Menu -->
+    </div>
+
+	<!-- END OF Grid -->
+    <hr>
+	<!-- END OF Content -->
+	</div>
+<!-- <dir id="mainFooterBtn"></dir> -->
+<!-- Footer -->
+<div class="w3-row">
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top w3-xlarge">
+ 	<button class="w3-button w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+ 	<button class="w3-button w3-padding-large w3-margin-bottom">Next »</button>
+ 	<div class="w3-right w3-margin-right">
+ 	<i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+ 	<i class="fa fa-instagram w3-hover-text-purple"></i>
+ 	<i class="fa fa-snapchat w3-hover-text-yellow"></i>
+ 	<i class="fa fa-pinterest-p w3-hover-text-red"></i>
+ 	<i class="fa fa-twitter w3-hover-text-light-blue"></i>
+ 	<i class="fa fa-linkedin w3-hover-text-indigo"></i>
+ </div>
+</footer>
+</div>
+</body>
+</html>
