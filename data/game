@@ -46,12 +46,12 @@ var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
       var img = document.getElementbyId("03");
-        // this.canvas.width = 480;
-        // this.canvas.height = 270;
+        this.canvas.width = 480;
+        this.canvas.height = 270;
         var ctx = this.canvas.getContext("2d");
         ctx.drawImage(img,100,100,500,500);
-        //this.context.drawImage();
-        // document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.context.drawImage();
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     }
 }
 
