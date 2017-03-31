@@ -21,12 +21,16 @@
   <div id="mainbackground"></div>
   <div id="mainTopbar"></div>
   <div id="mainHeader"></div>
+<div class="w3-content" style="max-width:1400px">
 
+<div class="w3-row">
 <div style="text-align:center;width:480px;">
-<button onmousedown="move(-0.2)" onmouseup="move(0.05)">ACCELERATE</button>
-<button onclick="myGameArea.stop()">Pause</button>
-  <button onclick="myGameArea.boot()">Continue</button>
-
+<button class="w3-button w3-padding-large w3-white w3-border"onmousedown="move(-0.2)" onmouseup="move(0.05)">TAP</button>
+    <button class="w3-button w3-padding-large w3-white w3-border" id="btnPlay" onclick="gameBtnPlay()">PLAY</button>
+    <!-- <button class="w3-button w3-padding-large w3-white w3-border" onclick="myGameArea.startup()">Continue</button> -->
+<!--         <button class="w3-button w3-padding-large w3-white w3-border" onclick="myGameArea.restart()">Restart</button> -->
+      </div>
+    </div>
   </div>
   </body>
 </html>
